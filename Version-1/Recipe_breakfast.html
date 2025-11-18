@@ -7,7 +7,7 @@
   <title>Breakfast — Easy Dorm Recipes</title>
 
   <style>
-    /* ========== THEME VARIABLES (same as index) ========== */
+    /*THEME VARIABLES*/
     :root {
       --bg: #ffffff;
       --card: #ffffff;
@@ -26,9 +26,8 @@
       --muted: #94a3b8;
       --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
+    /* Consisten across pages */
 
-    /* ========== GLOBAL ==========
-    All kept simple + identical to index page */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -46,7 +45,7 @@
       padding: 1rem;
     }
 
-    /* ========== NAVBAR (IDENTICAL TO INDEX) ========== */
+    /*NAVBAR*/
     header {
       background: var(--card);
       box-shadow: var(--shadow);
@@ -81,7 +80,7 @@
       background: rgba(0, 0, 0, 0.08);
     }
 
-    /* Toggle controls (copied exactly) */
+    /* Toggle controls similar to the index */
     .switch {
       width: 40px;
       height: 22px;
@@ -125,7 +124,7 @@
       gap: 0.75rem;
     }
 
-    /* ========== BREAKFAST RECIPE CARDS (kept simple) ========== */
+    /* Recipe containers similar for all the 3 pages */
     .recipe-card {
       background: var(--card);
       padding: 1.5rem;
@@ -144,6 +143,10 @@
       border-radius: var(--radius);
     }
 
+        .btn:hover {
+      background: #b45309;
+    }
+    
     @media (max-width: 800px) {
       .recipe-card {
         grid-template-columns: 1fr;
@@ -157,7 +160,6 @@
 
 <body>
 
-  <!-- ========== NAVBAR (COPIED EXACTLY) ========== -->
   <header>
     <div class="nav-inner container">
 
@@ -189,10 +191,10 @@
     </div>
   </header>
 
-  <!-- ========== MAIN CONTENT ========== -->
+ 
   <main class="container">
 
-    <!-- Recipe 1 -->
+    <!-- <-- Recipe 1 -->
     <article class="recipe-card">
       <div>
         <h2>Overnight Oats</h2>
@@ -216,7 +218,7 @@
       </div>
 
       <div class="recipe-img">
-        <img src="https://images.unsplash.com/photo-1509475826633-fed577a2c71b?q=80&w=1200&auto=format&fit=crop" alt="">
+        <img src= "oats.jpg" alt="">
       </div>
     </article>
 
@@ -244,7 +246,7 @@
       </div>
 
       <div class="recipe-img">
-        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=1200&auto=format&fit=crop" alt="">
+        <img src="ava.png" alt="">
       </div>
     </article>
 
@@ -254,7 +256,7 @@
     © Easy Dorm Recipes
   </footer>
 
-  <!-- ========== SAME JAVASCRIPT AS INDEX ========== -->
+  <!-- JS for dark mode and large text toggles -->
   <script>
     const root = document.documentElement;
     const darkToggle = document.getElementById("dark-toggle");

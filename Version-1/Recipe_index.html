@@ -7,10 +7,8 @@
   <title>Easy Dorm Recipes — Home</title>
 
   <style>
-    /* --------------------------------------------------------
-       THEME VARIABLES (light + dark mode)
-    -------------------------------------------------------- */
-    :root {
+    /*THEME VARIABLES*/
+:root {
       --bg: #ffffff;
       --card: #ffffff;
       --text: #1a1a1a;
@@ -21,7 +19,6 @@
       --max-width: 1000px;
     }
 
-    /* Dark mode variables override */
     :root.dark {
       --bg: #0f172a;
       --card: #1e293b;
@@ -30,9 +27,8 @@
       --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
 
-    /* --------------------------------------------------------
-       GLOBAL STYLES
-    -------------------------------------------------------- */
+    /* Consisten across pages */
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -50,9 +46,8 @@
       padding: 1rem;
     }
 
-    /* --------------------------------------------------------
-       NAVIGATION BAR
-    -------------------------------------------------------- */
+    /*NAVBAR*/
+
     header {
       background: var(--card);
       box-shadow: var(--shadow);
@@ -87,7 +82,7 @@
       background: rgba(0, 0, 0, 0.08);
     }
 
-    /* Dark mode switch */
+    /* Toggle controls similar to the index */
     .switch {
       width: 40px;
       height: 22px;
@@ -131,9 +126,7 @@
       gap: 0.75rem;
     }
 
-    /* --------------------------------------------------------
-       HERO SECTION
-    -------------------------------------------------------- */
+    /* Hero Section */
     .hero {
       display: grid;
       grid-template-columns: 1fr 350px;
@@ -160,9 +153,7 @@
       line-height: 1.5;
     }
 
-    /* --------------------------------------------------------
-       CONTACT PLACEHOLDER
-    -------------------------------------------------------- */
+    /* Contact form */
     .contact-box input,
     .contact-box textarea {
       width: 100%;
@@ -181,9 +172,10 @@
       cursor: pointer;
     }
 
-    /* --------------------------------------------------------
-       RESPONSIVE
-    -------------------------------------------------------- */
+    .btn:hover {
+      background: #b45309;
+    }
+    
     @media (max-width: 800px) {
       .hero {
         grid-template-columns: 1fr;
