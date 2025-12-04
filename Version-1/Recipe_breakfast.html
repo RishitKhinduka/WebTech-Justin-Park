@@ -135,6 +135,17 @@
       grid-template-columns: 1fr 330px;
       gap: 1.25rem;
     }
+    /* Added a subtle background for recipe cards as per the request of the product manager. */
+    .recipe-card {
+    background: #e8e8e8;  
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+    /* Same for Dark mode */
+    .dark .recipe-card {
+    background: #2a2f3a; 
+}
 
     .recipe-img img {
       width: 100%;
@@ -143,10 +154,18 @@
       border-radius: var(--radius);
     }
 
-        .btn:hover {
-      background: #b45309;
+    /* Added increase recipe image size when large text is enabled as per the request of the product manager. */
+    .large-text .recipe-img img {
+      height: 300px;    
+      transition: 0.25s ease;
     }
-    
+
+    @media (max-width: 800px) {
+      .large-text .recipe-img img {
+      height: 230px;  
+      }
+   }
+
     @media (max-width: 800px) {
       .recipe-card {
         grid-template-columns: 1fr;
@@ -196,6 +215,7 @@
  
   <main class="container">
 
+    <!-- Did not add seperate links to each indegrediet as it changed the formating of the website. -->
     <!-- <-- Recipe 1 -->
     <article class="recipe-card">
       <div>

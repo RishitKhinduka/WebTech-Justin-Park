@@ -1,0 +1,10 @@
+# Development Reflection
+
+## Interpreting and Implementing Someone Else’s Idea
+For this project, I worked on turning my product manager, Justin's recipe website idea into a real website. Justin wanted me to create clean, user-friendly recipe pages with features like dark mode, large text toggle, and ingredient purchase links. I focused on understanding the design requirements and translating them into HTML, CSS, and JavaScript while keeping the interface intuitive and visually appealing. I thoroughly enjoyed the creative aspect of making subtle design choices, like slightly different card backgrounds, to enhance the user experience. This was a wonmderfull experience and gave me a lot of real world practical knowledge about web design. 
+
+## Challenges in Development and Collaboration
+One of the main challenges was maintaining consistency across multiple pages while implementing the Justin's final feedback given in the GitHub issues. For example, ensuring that the dark mode, large text toggle, and subtle card backgrounds worked seamlessly across all the pages, like the Breakfast, Lunch, and Dinner pages. It  required careful planning. However, I found this as a learning experience in balancing aesthetics and functionality to meet the goals of the project. 
+
+## Use of AI Tools and Learning
+I used AI tools like GitHub copilot and Chatgpt to undertand how to code for large text toggles and then debug my current code. By using AI, I was able to implement solutions quickly and troubleshoot issues I hadn’t encountered before. Through this project, I learned how to effectively use AI when generating code because initially I faced the issue of the AI changing my code when asking to debug it and then alothough it worked, but I did not understand the code. Then, explaining it explicitly that do not chage the code and tell me where the problem is separately allowed me to prevent this problem. Hence, I learned that although use of AI is critical, you stil need to know how to code in order to understand what it gives you. 
